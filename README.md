@@ -17,37 +17,6 @@ The application is a Spring Boot based **Company Intranet Portal** website that 
 
 The application is containerized using Docker, deployed on Kubernetes, automated using Jenkins, and monitored using Nagios, Graphite, and Grafana.
 
----
-
-# Architecture
-
-```
-                 GitHub Repository
-                        │
-                        ▼
-                   Jenkins Pipeline
-                        │
-        ┌───────────────┼────────────────┐
-        │               │                │
-        ▼               ▼                ▼
-   Maven Build     Docker Build     Docker Push
-                        │
-                        ▼
-                 Docker Hub Repository
-                        │
-                        ▼
-                 Kubernetes Deployment
-                        │
-                        ▼
-              Spring Boot Application
-                        │
-        ┌───────────────┴───────────────┐
-        ▼                               ▼
-    Nagios Monitoring        Graphite + Telegraf
-                                        │
-                                        ▼
-                                   Grafana Dashboard
-```
 
 ---
 
@@ -114,7 +83,6 @@ The Jenkins pipeline performs the following stages:
 2. Build using Maven
 3. Create Docker Image
 4. Push Image to Docker Hub
-5. Deploy to Kubernetes
 
 Pipeline Flow:
 
@@ -132,9 +100,6 @@ Docker Build
    │
    ▼
 Docker Push
-   │
-   ▼
-Kubernetes Deploy
 ```
 
 ---
