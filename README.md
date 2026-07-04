@@ -1,21 +1,23 @@
-# Company Intranet Portal- DevOps Project
+# Company Intranet Portal – DevOps Project
 
-A complete DevOps implementation of a Spring Boot Company Intranet Portal demonstrating Continuous Integration, Continuous Deployment, Containerization, Kubernetes orchestration, and Monitoring using Jenkins, Docker, Kubernetes, Nagios, Graphite, and Grafana.
+A complete DevOps implementation of a **Company Intranet Portal** web application demonstrating Continuous Integration (CI), Continuous Deployment (CD), containerization, Kubernetes orchestration, and monitoring using Jenkins, Docker, Kubernetes, Nagios, Graphite, Telegraf, and Grafana.
 
 ---
 
 ## Project Overview
 
-This project demonstrates a complete DevOps workflow from application development to deployment and monitoring.
+This project demonstrates a complete DevOps workflow, covering the entire software delivery lifecycle from application development and automated testing to deployment and continuous monitoring.
 
-The application is a Spring Boot based **Company Intranet Portal** website that allows users to view technical symposium information including:
+The application is a web-based **Company Intranet Portal** designed to provide employees with centralized access to essential company information and internal resources. The portal includes the following modules:
 
-- Home Page
-- Schedule
-- Speakers
-- Registration
+* **Home** – Displays company news, announcements, and updates.
+* **About Us** – Provides information about the company's vision, mission, and organizational details.
+* **Departments** – Lists various departments and their functions.
+* **Employee Resources** – Offers quick access to internal documents, policies, forms, and useful links.
+* **Contact** – Contains company contact information and support details.
 
-The application is containerized using Docker, deployed on Kubernetes, automated using Jenkins, and monitored using Nagios, Graphite, and Grafana.
+The application is containerized using Docker to ensure consistency across different environments. Jenkins automates the Continuous Integration and Continuous Deployment (CI/CD) pipeline by building the application, creating Docker images, and deploying them to a Kubernetes cluster. Nagios continuously monitors the application's availability through HTTP health checks, while Telegraf collects system performance metrics such as CPU usage, memory utilization, disk usage, network traffic, and system uptime. These metrics are stored in Graphite and visualized through Grafana dashboards, providing real-time insights into the health and performance of the application and its infrastructure.
+
 
 
 ---
