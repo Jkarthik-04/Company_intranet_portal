@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Intranet Portal</title>
+
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">
+        <h2>Company Portal</h2>
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+</header>
+
+<section class="hero" id="home">
+
+    <h1>Welcome to Company Intranet Portal</h1>
+
+    <p>
+        Access employee information, company announcements,
+        departments, internal projects and corporate resources
+        from one centralized platform.
+    </p>
+
+    <a href="#services" class="btn">Explore Portal</a>
+
+</section>
+
+<section class="about" id="about">
+
+    <h2>About Us</h2>
+
+    <p>
+        Our Company Intranet Portal improves communication,
+        collaboration and productivity by providing employees
+        with secure access to important information and services.
+    </p>
+
+</section>
+
+<section id="services">
+
+    <div class="page-title">
+        <h1>Portal Services</h1>
+        <p>Everything employees need in one place.</p>
+    </div>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>Employee Directory</h3>
+            <p>Find employee profiles and contact information.</p>
+        </div>
+
+        <div class="card">
+            <h3>Departments</h3>
+            <p>View department details and responsibilities.</p>
+        </div>
+
+        <div class="card">
+            <h3>Company News</h3>
+            <p>Latest announcements and internal updates.</p>
+        </div>
+
+        <div class="card">
+            <h3>Projects</h3>
+            <p>Track ongoing company projects and activities.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="schedule-table">
+
+    <div class="page-title">
+        <h1>Department Overview</h1>
+    </div>
+
+    <table>
+
+        <tr>
+            <th>Department</th>
+            <th>Manager</th>
+            <th>Employees</th>
+        </tr>
+
+        <tr>
+            <td>Human Resources</td>
+            <td>Sarah Johnson</td>
+            <td>18</td>
+        </tr>
+
+        <tr>
+            <td>IT</td>
+            <td>David Wilson</td>
+            <td>42</td>
+        </tr>
+
+        <tr>
+            <td>Finance</td>
+            <td>Priya Sharma</td>
+            <td>16</td>
+        </tr>
+
+        <tr>
+            <td>Marketing</td>
+            <td>John Smith</td>
+            <td>21</td>
+        </tr>
+
+    </table>
+
+</section>
+
+<section class="countdown">
+
+    <h2>Portal Status</h2>
+
+    <div id="timer">
+        Loading...
+    </div>
+
+</section>
+
+<section class="form-section" id="contact">
+
+    <h2>Contact Administration</h2>
+
+    <form>
+
+        <input type="text" placeholder="Employee Name" required>
+
+        <input type="email" placeholder="Email Address" required>
+
+        <select required>
+            <option>Choose Department</option>
+            <option>HR</option>
+            <option>IT</option>
+            <option>Finance</option>
+            <option>Marketing</option>
+        </select>
+
+        <button type="submit">Submit</button>
+
+    </form>
+
+</section>
+
+<footer>
+
+    <p>
+        © 2026 Company Intranet Portal | Spring Boot + Maven
+    </p>
+
+</footer>
+
+<script th:src="@{/js/script.js}"></script>
+
+</body>
+
+</html>
