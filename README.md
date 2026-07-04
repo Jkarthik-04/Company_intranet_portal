@@ -102,23 +102,7 @@ Docker Build
 Docker Push
 ```
 
----
 
-# Docker
-
-Build Docker Image
-
-```bash
-docker build -t logithaadithya/event-manager:v1 .
-```
-
-Push Image
-
-```bash
-docker push logithaadithya/event-manager:v1
-```
-
----
 
 # Kubernetes Deployment
 
@@ -141,16 +125,12 @@ Check Services
 kubectl get svc
 ```
 
-Port Forward
 
-```bash
-kubectl port-forward service/event-manager-service 8082:8080
-```
 
 Application URL
 
 ```
-http://localhost:8082
+http://localhost:9090
 ```
 
 ---
@@ -177,7 +157,7 @@ Create Pipeline Job
 Repository:
 
 ```
-https://github.com/logithaadithya-s/24BAI0110-DevOps-Project.git
+(https://github.com/Jkarthik-04/Company_intranet_portal)
 ```
 
 Pipeline Script:
@@ -198,7 +178,7 @@ Nagios monitors:
 Application URL
 
 ```
-http://host.docker.internal:8082
+http://host.docker.internal:8080
 ```
 
 Nagios UI
@@ -210,7 +190,7 @@ http://localhost:8085
 Example Status
 
 ```
-Event Manager Website
+Company Intranet Portal Website
 
 Status : OK
 
@@ -275,23 +255,11 @@ Telegraf
  Grafana
 ```
 
----
-# Future Enhancements
 
-- GitHub Webhooks
-- Helm Charts
-- Prometheus Integration
-- Kubernetes Ingress
-- SSL/TLS
-- SonarQube Integration
-- ArgoCD Deployment
-- Automated Testing
-
----
 
 # Author
 
-**Logith Aadithya S**
+**Karthikeyan J**
 
 B.Tech Computer Science (AI & ML)
 
@@ -299,7 +267,7 @@ VIT Vellore
 
 GitHub:
 
-https://github.com/logithaadithya-s
+(https://github.com/Jkarthik-04)
 
 ---
 
