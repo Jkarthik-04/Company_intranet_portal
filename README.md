@@ -1,6 +1,6 @@
-# Event Manager - DevOps Project
+# Company Intranet Portal- DevOps Project
 
-A complete DevOps implementation of a Spring Boot Event Manager application demonstrating Continuous Integration, Continuous Deployment, Containerization, Kubernetes orchestration, and Monitoring using Jenkins, Docker, Kubernetes, Nagios, Graphite, and Grafana.
+A complete DevOps implementation of a Spring Boot Company Intranet Portal demonstrating Continuous Integration, Continuous Deployment, Containerization, Kubernetes orchestration, and Monitoring using Jenkins, Docker, Kubernetes, Nagios, Graphite, and Grafana.
 
 ---
 
@@ -8,7 +8,7 @@ A complete DevOps implementation of a Spring Boot Event Manager application demo
 
 This project demonstrates a complete DevOps workflow from application development to deployment and monitoring.
 
-The application is a Spring Boot based **Event Manager** website that allows users to view technical symposium information including:
+The application is a Spring Boot based **Company Intranet Portal** website that allows users to view technical symposium information including:
 
 - Home Page
 - Schedule
